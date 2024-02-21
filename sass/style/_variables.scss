@@ -1,0 +1,80 @@
+$font-title: 'Italiana';
+$font-title-path:  '../../assets/fonts/Italiana/Italiana-Regular';
+@font-face {
+    font-family: $font-title;
+    src: url('#{$font-title-path}.ttf') format('truetype');
+}
+
+$font-body: 'Roboto';
+// $font-body-path:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-Bold';
+// $font-body-path:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-BoldItalic';
+// $font-body-path:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-Italic';
+// $font-body-path:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-Light';
+// $font-body-path:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-LightItalic';
+// $font-body-path:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-Regular';
+
+// @font-face {
+//     font-family: $font-body;
+//     src: url('#{$font-body-path}.ttf') format('truetype');
+// }
+
+$font-body: 'Roboto';
+$font-body-path-bold:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-Bold';
+$font-body-path-bold-italic:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-BoldItalic';
+$font-body-path-italic:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-Italic';
+$font-body-path-light:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-Light';
+$font-body-path-light-italic:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-LightItalic';
+$font-body-path-regular:  '../../assets/fonts/Roboto_Condensed/RobotoCondensed-Regular';
+
+@font-face {
+    font-family: $font-body;
+    src: url('#{$font-body-path-bold}.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-body;
+    src: url('#{$font-body-path-bold-italic}.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: $font-body;
+    src: url('#{$font-body-path-italic}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: $font-body;
+    src: url('#{$font-body-path-light}.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-body;
+    src: url('#{$font-body-path-light-italic}.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: $font-body;
+    src: url('#{$font-body-path-regular}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+$vert: #2F4137;
+$brun: #7E6A54;
+$brun-beige: #C0B8B8;
+$taupe: #D9D0C5;
+$beige:#fefae078;
+$yellow: #e1b633; 
+$yellowTrans: #e1b5331a;
+
+

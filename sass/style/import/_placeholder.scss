@@ -1,0 +1,114 @@
+@import '../variables';
+// @mixin flexCenter{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+/*c'est mieux de mettre un placeholder au lieu de mettre le mixin qd on n'a pas de paramètres, cela évite que le code se répète dans le fichier css*/
+%flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flexBetween{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+%mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%width-max{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+%center-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*#region TITLES*/
+
+
+%positionBeforeLinesContact{
+    right: 32%;
+}
+%positionAfterLinesContact{
+    left: 32%;
+}
+%positionBeforeLinesDev{
+    right: 29%;
+}
+%positionAfterLinesDev{
+    left: 29%;
+}
+%positionBeforeLinesColok{
+    right: 34%;
+}
+%positionAfterLinesColok{
+    left: 34%;
+}
+%positionBeforeLinesDesign{
+    right: 32%;
+}
+%positionAfterLinesDesign{
+    left: 32%;
+}
+%positionBeforeLinesNode{
+    right: 23%;
+}
+%positionAfterLinesNode{
+    left: 23%;
+}
+%positionBeforeLinesPiou{
+    right: 32%;
+}
+%positionAfterLinesPiou{
+    left: 32%;
+}
+
+// %positionBeforeLinesReact{
+//     right: 34%;
+// }
+// %positionAfterLinesReact{
+//     left: 34%;
+// }
+/*_________TITLES_________*/
+
+%title{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-family: $font-title, sans-serif;
+    position: relative;
+}
+
+%title-beforeLines{
+    background: $yellow none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 52%;
+    width: 10%;
+
+}
+%title-afterLines{
+    background: $yellow none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 52%;
+    width: 10%;
+}
+
+/*#endregion TITLES*/
+
+

@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Italiana";
+  src: url("../../assets/fonts/Italiana/Italiana-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-LightItalic.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Italiana";
+  src: url("../../assets/fonts/Italiana/Italiana-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-LightItalic.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*c'est mieux de mettre un placeholder au lieu de mettre le mixin qd on n'a pas de paramètres, cela évite que le code se répète dans le fichier css*/
+/*#region TITLES*/
+/*_________TITLES_________*/
+/*#endregion TITLES*/
+figure.snip1200 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 10px 3rem 10px;
+  width: 100%;
+  background: #ffffff;
+  color: #7E6A54;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+  font-size: 16px;
+  cursor: context-menu;
+}
+
+figure.snip1200 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+figure.snip1200 img {
+  max-width: 100%;
+  position: relative;
+  opacity: 0.9;
+}
+
+figure.snip1200 figcaption {
+  position: absolute;
+  top: 45%;
+  left: 7%;
+  right: 7%;
+  bottom: 45%;
+  border: 1px solid #e1b633;
+  border-width: 0 1px 1px;
+  background-color: rgba(255, 255, 255, 0.77);
+}
+
+figure.snip1200 .heading {
+  overflow: hidden;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  position: absolute;
+  top: -78px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  figure.snip1200 .heading {
+    top: -40px;
+  }
+}
+figure.snip1200 h2 {
+  display: table;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: "Italiana";
+  background-color: #ffffff;
+  border: 1px solid #e1b633;
+}
+
+@media (max-width: 768px) {
+  figure.snip1200 {
+    width: auto;
+  }
+  figure.snip1200 h2 {
+    font-size: 2rem;
+  }
+  figure.snip1200:hover {
+    height: 40rem;
+  }
+  figure.snip1200:hover p {
+    margin-bottom: 0.6rem;
+  }
+  figure.snip1200 .detail-design {
+    line-height: 1em;
+  }
+}
+@media (max-width: 415px) {
+  .carte1 figure.snip1200 {
+    height: 63rem;
+  }
+}
+figure.snip1200 h2:before,
+figure.snip1200 h2:after {
+  position: absolute;
+  display: block;
+  width: 990%;
+  height: 1px;
+  content: "";
+  background: #e1b633;
+  top: 50%;
+}
+
+figure.snip1200 h2:before {
+  left: -1000%;
+}
+
+figure.snip1200 h2:after {
+  right: -1000%;
+}
+
+figure.snip1200 .detail-design {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+  opacity: 0;
+  line-height: 1.6em;
+  text-align: justify;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+figure.snip1200 .detail-design p {
+  margin-bottom: 1rem;
+}
+figure.snip1200 .detail-design a {
+  color: white;
+  background-color: #e1b633;
+  width: fit-content;
+  text-decoration: none;
+  display: block;
+  margin: 2rem auto auto auto;
+  padding: 0.7rem 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+@media (max-width: 1288px) {
+  figure.snip1200 .detail-design {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+figure.snip1200:hover .detail-design {
+  opacity: 1;
+}
+figure.snip1200:hover h2 {
+  font-size: 3rem;
+}
+figure.snip1200:hover .heading {
+  top: -59px;
+}
+
+figure.snip1200:hover img,
+figure.snip1200.hover img {
+  opacity: 0.25;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  filter: blur(5px);
+}
+
+figure.snip1200:hover figcaption,
+figure.snip1200.hover figcaption {
+  top: 7%;
+  bottom: 7%;
+}
+
+figure.snip1200:hover p,
+figure.snip1200.hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+
+/*# sourceMappingURL=card.css.map */
