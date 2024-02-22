@@ -9,6 +9,12 @@
     // position: relative;
     color: $brun;
 }
+@media (max-width : 1450px){
+    .tabs { 
+        padding-right: 12rem;
+    }
+}
+
 @media (max-width : 1288px){
     .tabs { 
         padding-right: 0;
