@@ -220,6 +220,24 @@ main .line-wp {
   main .line-home, main .line-dev, main .line-design, main .line-colok, main .line-contact, main .line-node, main .line-hackaton, main .line-wp {
     right: 12rem;
   }
+  main .line-dev {
+    height: 260.6vh;
+  }
+  main .line-colok {
+    height: 511.1vh;
+  }
+  main .line-hackaton {
+    height: 771.8vh;
+  }
+  main .line-wp {
+    height: 643.6vh;
+  }
+  main .line-node {
+    height: 289.8vh;
+  }
+  main .line-contact {
+    height: 92.9vh;
+  }
 }
 
 .arrow-scroll {
@@ -646,11 +664,19 @@ header {
 }
 @media (max-width: 1450px) {
   .main-index .home-container .shape-container {
-    top: 52%;
+    top: 13%;
+    height: 10rem;
+  }
+  .main-index .home-container .shape-container .star2 {
+    bottom: -22rem;
+    left: -7rem;
   }
 }
 
 @media (max-width: 1450px) {
+  .indexBody {
+    min-height: 160vh;
+  }
   .main-index .home-container .intro {
     top: 17rem;
     padding-right: 12rem;
@@ -739,7 +765,7 @@ header {
     min-height: 116vh;
   }
   .indexBody .home-container .intro {
-    top: 30rem;
+    top: 23rem;
   }
   .indexBody .home-container .intro .titre {
     font-size: 1.6rem;
@@ -751,7 +777,7 @@ header {
     top: 64rem;
   }
   .indexBody .home-container .shape-container {
-    top: 52%;
+    top: 17%;
     width: 27rem;
   }
   .indexBody .home-container .shape-container .shape {
@@ -760,13 +786,13 @@ header {
     height: 43rem;
   }
   .indexBody .home-container .shape-container .star1 {
-    top: 0.6rem;
+    top: -0.4rem;
     left: 14rem;
     width: 4rem;
   }
   .indexBody .home-container .shape-container .star2 {
-    bottom: 28rem;
-    left: 7rem;
+    bottom: -32rem;
+    left: 8rem;
     width: 3rem;
   }
 }
@@ -1260,6 +1286,9 @@ abbr[title] {
   }
 }
 @media (max-width: 415px) {
+  .contour-description .desc-cards {
+    align-items: center;
+  }
   .marges-forme .node-title {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1367,7 +1396,6 @@ footer .copyright {
   border-top: 0.1rem solid #C0B8B8;
   width: 68%;
   text-align: center;
-  padding-top: 2rem;
   padding-top: 1rem;
 }
 
@@ -1375,11 +1403,19 @@ footer .copyright {
   background-color: white;
 }
 
-/*@media (max-width : 1450px){
-    footer{
-        margin-top: 0;
-    }
-}*/
+@media (max-width: 1450px) {
+  .footer-white {
+    padding-bottom: 3rem;
+  }
+  footer {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+  footer .contact-footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 @media (max-width: 768px) {
   footer {
     height: 37vh;
