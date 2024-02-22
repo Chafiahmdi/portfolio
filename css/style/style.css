@@ -221,19 +221,19 @@ main .line-wp {
     right: 12rem;
   }
   main .line-dev {
-    height: 260.6vh;
+    height: 288.3vh;
   }
   main .line-colok {
-    height: 511.1vh;
+    height: 527vh;
   }
   main .line-hackaton {
-    height: 771.8vh;
+    height: 791.7vh;
   }
   main .line-wp {
-    height: 643.6vh;
+    height: 670.9vh;
   }
   main .line-node {
-    height: 289.8vh;
+    height: 324.4vh;
   }
   main .line-contact {
     height: 92.9vh;
@@ -379,6 +379,7 @@ header {
 @media (max-width: 415px) {
   .logo {
     width: 4rem;
+    top: 2rem;
   }
 }
 .icones, .button {
@@ -456,6 +457,11 @@ header {
   }
   .main-index {
     min-height: 105vh;
+  }
+}
+@media (max-width: 415px) {
+  .button {
+    top: 2.2rem;
   }
 }
 .menu.-open {
@@ -1036,6 +1042,11 @@ header {
   min-height: 64vh;
 }
 
+@media (max-width: 1450px) {
+  .main-contact {
+    min-height: 81vh;
+  }
+}
 .flex-contact {
   display: flex;
   justify-content: center;
