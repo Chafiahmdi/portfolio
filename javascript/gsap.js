@@ -28,50 +28,6 @@ let tl = gsap.timeline();
                   //         })
 
 
-// ECRITURE ACCUEIL
-  /* --- Split the text, Great Horned Owl --- */
-  var tlSplitGreat = gsap.timeline({onComplete: () => {SplitGreat.revert()}}), 
-      SplitGreat = new SplitText(".titre", {type:"words,chars"}), 
-      chars = SplitGreat.chars;
-
-  // qd j le commente il fonctionne plus
-  tlSplitGreat.from(chars, {
-    duration: 0.8,
-    opacity:0,
-    y:10,
-    ease:"circ.out",
-    stagger: 0.02,
-  }, "+=0");
-
-  /* --- Split the text, Burrowing Owl --- */
-  function setupSplits() {
-    
-  var tlSplitBurrowing = gsap.timeline(), 
-      SplitBurrowing = new SplitText(".titleBurrowing", {type:"words,chars"}), 
-      chars = SplitBurrowing.chars; //an array of all the divs that wrap each character
-
-  tlSplitBurrowing.from(chars, {
-    duration: 0.8,
-    opacity:0,
-    y:10,
-    ease:"circ.out",
-    stagger: 0.02,
-  scrollTrigger: {
-      trigger: ".titleBurrowing",
-  //markers:true,
-      start: "top 75%",
-    end: "bottom center",
-      scrub:1
-    }
-  //,   onComplete: () => {SplitBurrowing.revert()}
-  }, "+=0");
-    
-  };
-//  ECRITURE ACCUEIL
-
-
-
-
 
 //   rotation: 360, // Rotation de l'image
                         // }); 
@@ -97,3 +53,6 @@ let tl = gsap.timeline();
 //     y: 500,
 //     apacity: 0
 //   });
+
+
+
